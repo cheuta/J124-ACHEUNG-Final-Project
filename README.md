@@ -17,7 +17,8 @@ This dataset CSV was obtained from the [Kaggle](https://www.kaggle.com/datasets/
 
 
 ## Data Analysis 
-I used Google Sheets to access, organize, and visualize the dataset. You can find it [here](https://docs.google.com/spreadsheets/d/1Lk4DaioA_kUA9PnI-bP_J-3oBBLQC3fQtKKfhAiijvg/edit?usp=sharing).
+I used Google Sheets to access, organize, and visualize the dataset. You can find the spreadsheet [here](https://docs.google.com/spreadsheets/d/1Lk4DaioA_kUA9PnI-bP_J-3oBBLQC3fQtKKfhAiijvg/edit?usp=sharing).
+
 This dataset can help us answer many questions:
 - How are calories, sugar, and fiber distributed across cereals?
 - Which cereals have the most extreme nutritional values?
@@ -28,7 +29,8 @@ This dataset can help us answer many questions:
 
 ### Do manufacturers differ in average rating or nutritional profile?
 ![Pivot table containing cereal counts under each manufacturer and the averages of their ratings and nutritional values.](mfc_AVGs.png) 
-In this pivot table, we can see that manufacturers differ in average ratings and nutritional profiles. Nabisco stands out with the highest average rating of about 68 and the highest average fiber of nearly 8g. In contrast, General Mills and Kellogg’s, which produce a bulk of the most popular cereals, show lower average ratings (34 - 44) and higher average sugar levels around 10g. Post cereals have the highest average calories per cup, sitting just below 200 calories, and the highest average sugar levels. Lastly, Quaker Oats and Ralston Purina fall in the middle for both nutrition and ratings.
+In this pivot table, we can see that manufacturers differ in average ratings and nutritional profiles. **Nabisco** stands out with the highest average rating of about 68 and the highest average fiber of nearly 8g. In contrast, **General Mills** and **Kellogg’s**, which produce a bulk of the most popular cereals, show lower average ratings (34 - 44) and higher average sugar levels around 10g. **Post** cereals have the highest average calories per cup, sitting just below 200 calories, and the highest average sugar levels. Lastly, **Quaker Oats** and **Ralston Purina** fall in the middle for both nutrition and ratings.
+
 With this information, it seems like manufacturers who produce higher fiber, lower sugar cereals tend to have higher average ratings. On the other hand, brands with sweeter, calorie dense cereals generally score lower. However, this does not prove causation and only highlights the noticeable difference in how cereal companies produce their products nutritionally and how these choices may align with consumer ratings. We must also compare the values in this pivot with a grain of salt, since the overall number of cereal brands under each manufacturer is small. 
 
 
@@ -37,7 +39,7 @@ With this information, it seems like manufacturers who produce higher fiber, low
 
 *Scatterplot showcasing the relationship between sugar and rating of all 77 cereals. [Chart by: Asta Cheung - Source: [Kaggle](https://www.kaggle.com/datasets/crawford/80-cereals/data) - Created with Google Sheets]*
 
-This is a scatter plot showcasing the relationship between Sugar and Rating for all 77 cereals. The trendline shows us that there is a negative correlation between grams of sugar and rating, meaning, as the amount of sugar decreases, the rating increases. However, it is important to note that the correlation is rather weak with an R^2 value of 0.338. So, while there is a relationship between sugar and rating, it is not strong enough to constitute predictions. 
+This is a scatter plot showcasing the relationship between sugar and rating for all 77 cereals. The trendline shows us that there is a negative correlation between grams of sugar and rating, meaning, as the amount of sugar decreases, the rating increases. However, it is important to note that the correlation is rather weak with an R^2 value of 0.338. So, while there is a relationship between sugar and rating, it is not strong enough to constitute predictions. 
 
 
 ### Let’s take a closer look at the distribution of sugar across all the cereal brands.
@@ -45,7 +47,7 @@ This is a scatter plot showcasing the relationship between Sugar and Rating for 
 
 *Histogram showcasing the distribution of sugar across the 77 cereals. [Chart by: Asta Cheung - Source: [Kaggle](https://www.kaggle.com/datasets/crawford/80-cereals/data) - Created with Google Sheets]*
 
-This histogram shows how sugar content per cup is distributed across all 77 cereals. A large cluster of cereals falls between approximately 0 - 3 grams of sugar per cup, with another significant group in the 6 - 9 gram range. Sugar levels beyond 12g see a huge drop. This uneven distribution helps us explain why the sugar and rating correlation in the previous chart is relatively weak. Most cereals have a narrow band of sugar values, leaving little variation for a strong linear relationship. 
+This histogram shows how sugar content per cup is distributed across all 77 cereals. A large cluster of cereals falls between approximately 0 - 3 grams of sugar per cup, with another significant group in the 6 - 12.5 gram range. Sugar levels beyond 18.75g see a huge drop. This uneven distribution helps us explain why the sugar and rating correlation in the previous chart is relatively weak. Most cereals have a narrow band of sugar values, leaving little variation for a strong linear relationship. 
 
 
 ### Do high fiber cereals tend to have higher ratings than cereals with low fiber?
